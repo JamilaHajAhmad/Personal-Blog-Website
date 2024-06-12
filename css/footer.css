@@ -1,0 +1,13 @@
+footer {
+    text-align: center;
+    font-size: 20px;
+    background-color: #befff7;
+    padding: 10px;
+    color: #22668d;
+}
+
+
+footer p span {
+    color: #d67bff;
+    font: 20px "Acme", sans-serif ;
+}

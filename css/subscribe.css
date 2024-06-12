@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css2?family=Acme&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Lora:ital,wght@0,400..700;1,400..700&display=swap);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.subscribe {
+    padding: 60px;
+}
+
+
+.subscribe form {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    -webkit-transform: translate(-50%,-70%);
+    -moz-transform: translate(-50%,-70%);
+    -ms-transform: translate(-50%,-70%);
+    -o-transform: translate(-50%,-70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid #bc7fcd;
+}
+
+
+.subscribe form input {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #4a54e2;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+
+.subscribe form button {
+    width: 100px;
+    height: 50px;
+    padding: 10px 20px;
+    font: 20px "Acme", sans-serif;
+    background-color: #F3D0D7;
+    border: 1px solid #4a54e2;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: relative;
+}
+
+
+.subscribe form h1 {
+    position: relative;
+    top: -30px;
+}
+
+
+.subscribe form .head {
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    padding: 100px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    position: relative;
+    width: 100%;
+    -webkit-box-shadow: 10px 10px 90px 0px rgba(188,127,205,0.35);
+    -moz-box-shadow: 10px 10px 90px 0px rgba(188,127,205,0.35);
+    box-shadow: 10px 10px 90px 0px rgba(188,127,205,0.35);
+}
+
+
+.logo {
+    width: 250px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+
+header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    background-color: #4a54e2;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+
+header  a:hover::after {
+    width: 100%;
+    height: 2px;
+}
+
+
+header a {
+    position: relative;
+    left: -100px;
+    text-decoration: none;
+    font: 20px "Acme", sans-serif;
+    color: #bc7fcd;
+}
+
+
+@media (max-width: 1200px) {
+    .subscribe form {
+        top: 90%;
+    }
+}
+
+
+@media (max-width: 840px) {
+    .subscribe form h1 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,343 @@
+@import url(https://fonts.googleapis.com/css2?family=Acme&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Lora:ital,wght@0,400..700;1,400..700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Lora:ital,wght@0,400..700;1,400..700&family=Merienda:wght@300..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shadows+Into+Light&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Lora:ital,wght@0,400..700;1,400..700&family=Merienda:wght@300..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Shadows+Into+Light&display=swap);
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid rgba(188,127,205,0.7);
+}
+
+header a {
+    position: relative;
+    left: -100px;
+    text-decoration: none;
+    font: 20px "Acme", sans-serif;
+    color: #bc7fcd;
+}
+
+
+header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    background-color: #4a54e2;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+
+header a:hover::after {
+    width: 100%;
+    height: 2px;
+}
+
+
+.logo {
+    width: 250px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+
+.home {
+    position: absolute;
+    right: 50px;
+    color: #22668d;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    gap: 40px;
+    position: relative;
+}
+
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bc7fcd;
+    padding: 40px;
+}
+
+
+.container .content img {
+    max-width: 450%;
+    margin-bottom: 5px;
+}
+
+
+.container .author {
+    position: relative;
+}
+
+
+.container .author .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    right: -15px;
+    top: -50px;
+}
+
+
+.container .content span:first-of-type {
+    font: 20px "Acme", sans-serif;
+    display: inline-block;
+}
+
+
+.container .content span:first-of-type i {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.container .content p {
+    font-family: "Playfair Display", serif;
+    line-height: 1.6;
+}
+
+
+.container .content p:first-of-type {
+    font-weight: 600;
+}
+
+.container .content blockquote {
+    font: 20px "Pacifico", cursive;
+    line-height: 1.6;
+}
+
+
+.container .content blockquote i {
+    font-size: 30px;
+    color: #bc7fcd;
+}
+
+
+.container .content blockquote i:first-of-type {
+    margin-right: 7px;
+}
+
+
+.container .content blockquote i:last-of-type {
+    margin-left: 7px;
+}
+
+
+.container .content p:nth-of-type(2)::first-letter {
+    font-size: 40px;
+}
+
+
+.container .content p:last-of-type {
+    position: relative;
+}
+
+
+.container .content p:last-of-type::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #777;
+    left: 0;
+    bottom: -8px;
+
+}
+
+
+.container .hashtags {
+    font: 20px "Acme", sans-serif;
+}
+
+
+.container .hashtags span {
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+
+.container .hashtags span:hover {
+    color: blue;
+}
+
+
+.container .hashtags span:first-of-type i {
+    margin-right: 0;
+}
+
+
+.container .author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -410px;
+    right: -150px;
+    background-color: #eed3d9;
+    padding: 50px;
+}
+
+
+.container .author .content2 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Merienda", cursive;
+    line-height: 1.5;
+}
+
+
+.container .author .content2 span {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+
+.container .author .content2 span:first-of-type {
+    font: 20px  "Shadows Into Light", cursive;
+}
+
+
+.container .author .content2 i {
+    font-size: 27px;
+    position: relative;
+    right: 15px;
+    color: #4a54e2;
+}
+
+
+.container .author .social {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+}
+
+
+.container .author .social i {
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+
+.container .author .social i:first-of-type:hover {
+    color: blue;
+}
+
+
+.container .author .social i:last-of-type:hover {
+    color: red;
+}
+
+
+.container .author .content2 p {
+    position: relative;
+}
+
+
+.container .author .content2 p::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #777;
+    left: 0;
+    bottom: -13px;
+}
+
+
+.container .archives-and-elsewhere {
+    position: relative;
+    top: 80px;
+    left: -298px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+
+.container .archives-and-elsewhere .elsewhere {
+    margin-top: 50px;
+}
+
+
+.container .archives-and-elsewhere a {
+    font-size: 18px;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+
+    .container .author {
+        top: 100px;
+        right: -3px;
+    }
+
+
+    .container .archives-and-elsewhere {
+        top: 200px;
+        left: -160px;
+    }
+}
+
+
+.container .content .caption {
+    margin-top: 5px;
+    font: 13px "Roboto Slab", serif;
+}
+
+
+
+
+

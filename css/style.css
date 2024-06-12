@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css2?family=Acme&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Lora:ital,wght@0,400..700;1,400..700&display=swap);
+@import url(header.css);
+@import url(responsive-header.css);
+@import url(main.css);
+@import url(footer.css);
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
