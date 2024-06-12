@@ -4,7 +4,7 @@ the structure and design for my own blog.</p>
 
 <h2>Udacity Feedback</h2>
 
-<pre> You made it!! 🔥 🔥
+<pre>You made it!! 🔥 🔥
 Dear Student, Congratulations on successfully completing the Personal Blog Website project! Your hard work,
 dedication, and attention to detail have paid off, resulting in a polished and professional blog website.
 
